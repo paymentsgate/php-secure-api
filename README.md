@@ -17,8 +17,6 @@ This is a complete PHP SDK for communication with the paymentsgate service.
 - `ext-curl` - native PHP extension for HTTP requests
 - `ext-json` - native PHP extension for JSON payload manipulation
 
-*Unlike the NodeJS version, this PHP SDK has zero external dependencies (no third-party packages required).*
-
 ## Installation
 
 You can install the package via composer:
@@ -27,8 +25,6 @@ You can install the package via composer:
 composer require paymentsgate/php-secure-api
 
 ```
-
-*(Note: If you haven't published it to Packagist yet, you can also clone the repository and use `composer install` locally).*
 
 ## Usage
 
@@ -79,7 +75,7 @@ $client = new ApiClient([
 
 ```
 
-*It is important to note that the data format for key transfer is base64.*
+_It is important to note that the data format for key transfer is base64._
 
 ## Examples
 
@@ -114,7 +110,6 @@ Response:
     }
   ]
 }
-
 ```
 
 **Use QUOTE response for next request**
@@ -135,9 +130,10 @@ $result = $client->createPayOut([
 ]);
 
 ```
+
 ## Available currencies
-``
-USDT
+
+`USDT
 EUR
 USD
 TRY
@@ -259,11 +255,11 @@ UYU
 VEF
 VND
 YER
-ZMK
-``
+ZMK`
+
 ## Available payment methods
-``
-p2p
+
+`p2p
 c2c
 m10
 mpay
@@ -364,5 +360,4 @@ banktransferngn
 mpesa
 airtel
 equitel
-fib
-``
+fib`
