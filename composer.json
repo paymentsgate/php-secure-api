@@ -1,0 +1,24 @@
+{
+  "name": "paymentsgate/php-secure-api",
+  "description": "PHP SDK for PaymentsGate Secure API",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": "^8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PaymentsGate\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "PaymentsGate",
+      "email": "ddestinadounrecibado@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
